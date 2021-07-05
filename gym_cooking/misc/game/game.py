@@ -1,10 +1,13 @@
 import os
 import pygame
 import numpy as np
-from utils.core import *
-from misc.game.utils import *
+from gym_cooking.utils.core import *
+from gym_cooking.misc.game.utils import *
 
-graphics_dir = 'misc/game/graphics'
+from pathlib import Path
+
+base_path = Path(__file__).parent
+graphics_dir = Path(base_path / 'graphics').resolve()
 _image_library = {}
 
 def get_image(path):
