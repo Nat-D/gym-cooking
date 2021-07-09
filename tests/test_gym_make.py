@@ -34,5 +34,6 @@ obs = env.step(action_dict={
     'agent-2': (0,0)
     })
 
-#print(str(obs))
+
+
 
